@@ -1,0 +1,26 @@
+version: 1
+phase: 3
+channel: discord
+allowed_command_types:
+  - STATUS
+  - READ
+  - PLAN
+  - DRAFT
+  - PROPOSE_CHANGE
+  - APPROVE_CHANGE
+  - REJECT_CHANGE
+  - STOP
+
+phase_3_runtime_permission:
+  auto_allowed_classes:
+    - A
+    - B
+  blocked_auto_classes:
+    - C
+    - D
+
+additional_constraints:
+  - discord_is_transport_only
+  - normalize_before_policy_check
+  - unverified_actor_cannot_approve
+  - protected_targets_require_explicit_approval

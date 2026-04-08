@@ -1,0 +1,23 @@
+version: 1
+phase: 3
+channel: discord
+blocked_patterns:
+  - ambiguous_destructive_command
+  - unbounded_scope_command
+  - direct_publish_request
+  - direct_customer_message_request
+  - direct_merge_request_without_review_path
+  - direct_policy_override_request
+  - direct_constitution_amendment_by_channel
+  - direct_secret_request
+  - direct_sudo_request
+  - direct_global_install_request
+
+blocked_examples:
+  - "幫我把所有該改的都改掉直接跑"
+  - "直接 merge"
+  - "直接發給客戶"
+  - "直接上架"
+  - "把 policy 改掉"
+  - "給我 token"
+  - "直接 sudo 裝好"
