@@ -1,0 +1,8 @@
+version: 1
+phase: 5
+emergency_controls:
+  global_freeze_enabled: true
+  stop_has_priority: true
+  read_only_fallback_enabled: true
+  audit_must_continue_during_freeze: true
+  only_operator_may_clear_freeze: true
