@@ -1,0 +1,7 @@
+version: 1
+phase: 6
+activation_default_state:
+  bridge_runtime_status: blocked_by_default
+  discord_execution_enabled: false
+  explicit_go_no_go_decision_required: true
+  governance_review_required_before_activation: true
