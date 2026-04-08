@@ -1,0 +1,17 @@
+version: 1
+phase: 5
+activation_requirements:
+  explicit_operator_approval_required: true
+  protected_branch_governance_required: true
+  audit_schema_required: true
+  operator_control_surface_required: true
+  emergency_freeze_required: true
+  request_expiry_rule_required: true
+
+hard_blockers:
+  - actor_verification_missing
+  - approval_validation_missing
+  - audit_recording_missing
+  - global_stop_missing
+  - normalization_bypass_possible
+  - protected_target_execution_without_explicit_approval

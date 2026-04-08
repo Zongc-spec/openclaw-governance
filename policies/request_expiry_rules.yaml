@@ -1,0 +1,8 @@
+version: 1
+phase: 5
+request_expiry_rules:
+  pending_requests_must_expire: true
+  revalidation_required_after_expiry: true
+  invalidate_on_actor_revocation: true
+  invalidate_on_policy_incompatibility: true
+  record_expiry_events_in_audit: true
