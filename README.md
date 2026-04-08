@@ -30,3 +30,5 @@ Anything not explicitly allowed is denied by default.
 Phase 1 — Governance foundation only.
 No Discord execution bridge is authorized yet.
 No production autonomous write path is authorized yet.
+
+Validation note.
