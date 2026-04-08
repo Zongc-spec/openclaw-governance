@@ -1,0 +1,10 @@
+version: 1
+phase: 8
+implementation_scope_guardrails:
+  blocked_by_default: true
+  no_production_activation: true
+  no_external_publish: true
+  no_customer_message_execution: true
+  no_protected_target_auto_execution: true
+  no_governance_bypass: true
+  evidence_oriented_only: true

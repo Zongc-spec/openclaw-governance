@@ -1,0 +1,16 @@
+version: 1
+phase: 8
+runtime_evidence_requirements:
+  parser_evidence_required: true
+  normalization_evidence_required: true
+  actor_verification_evidence_required: true
+  approval_handling_evidence_required: true
+  pending_request_store_evidence_required: true
+  audit_evidence_required: true
+  stop_priority_evidence_required: true
+  global_freeze_evidence_required: true
+  protected_target_blocking_evidence_required: true
+  read_only_fallback_evidence_required: true
+  failure_path_evidence_required: true
+
+activation_remains_blocked_without_full_review: true
