@@ -1,0 +1,15 @@
+version: 1
+phase: 1
+allowed_actions:
+  class_a:
+    - read_repo_files
+    - read_workspace_files
+    - inspect_browser_page
+    - collect_page_data
+    - summarize_logs
+    - generate_plan
+    - generate_draft
+  class_b:
+    - create_draft_artifact
+    - create_pr_draft_text
+    - create_issue_draft_text

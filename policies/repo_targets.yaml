@@ -1,0 +1,15 @@
+version: 1
+phase: 1
+repo_targets:
+  protected_paths:
+    - .github/
+    - docs/constitution/
+    - policies/
+  approved_draft_paths:
+    - drafts/
+    - reports/
+    - proposals/
+  forbidden_direct_write_paths:
+    - docs/constitution/
+    - policies/
+    - .github/

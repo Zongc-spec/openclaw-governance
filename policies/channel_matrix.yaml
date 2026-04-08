@@ -1,0 +1,11 @@
+version: 1
+phase: 1
+channels:
+  github:
+    status: approved_for_governance
+    may_execute: false
+    notes: source_of_truth_only
+  discord:
+    status: not_yet_approved
+    may_execute: false
+    notes: reserved_for_future_command_bridge

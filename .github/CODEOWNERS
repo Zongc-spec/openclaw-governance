@@ -1,0 +1,6 @@
+* @Zongc-spec
+
+/.github/ @Zongc-spec
+/.github/CODEOWNERS @Zongc-spec
+/docs/constitution/ @Zongc-spec
+/policies/ @Zongc-spec

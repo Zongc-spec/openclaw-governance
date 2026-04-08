@@ -1,0 +1,15 @@
+version: 1
+phase: 1
+approval_matrix:
+  class_a:
+    owner_approval_required: false
+  class_b:
+    owner_approval_required: false
+    conditions:
+      - draft_target_only
+      - reversible
+  class_c:
+    owner_approval_required: true
+  class_d:
+    owner_approval_required: true
+    explicit_only: true

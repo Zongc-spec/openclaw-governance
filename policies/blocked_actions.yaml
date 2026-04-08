@@ -1,0 +1,15 @@
+version: 1
+phase: 1
+blocked_actions:
+  - merge_protected_branch
+  - delete_files
+  - publish_external_content
+  - send_customer_message
+  - rotate_credentials
+  - install_new_skill
+  - enable_new_channel
+  - run_sudo_command
+  - execute_global_package_install
+  - modify_governance_docs_without_pr
+  - commit_secrets
+  - bypass_audit
