@@ -1,0 +1,22 @@
+version: 1
+phase: 4
+approval_requirements:
+  actor_must_be_verified: true
+  approval_must_reference_request_id: true
+  approval_must_be_explicit: true
+  approval_must_be_request_bound: true
+  stop_overrides_approval: true
+
+  required_for:
+    - protected_targets
+    - class_c
+    - class_d
+    - mode_transition_to_controlled_execute
+
+  invalid_if:
+    - actor_unverified
+    - request_unknown
+    - request_closed
+    - target_changed
+    - scope_widened
+    - ambiguous_approval

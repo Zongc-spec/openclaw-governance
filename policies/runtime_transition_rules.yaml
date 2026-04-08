@@ -1,0 +1,30 @@
+version: 1
+phase: 4
+runtime_transition_rules:
+  default_mode: OBSERVE
+
+  allowed_transitions:
+    - from: OBSERVE
+      to: PREPARE
+    - from: PREPARE
+      to: OBSERVE
+    - from: PREPARE
+      to: HIGH_RISK_PENDING
+    - from: HIGH_RISK_PENDING
+      to: PREPARE
+    - from: HIGH_RISK_PENDING
+      to: OBSERVE
+    - from: CONTROLLED_EXECUTE
+      to: HIGH_RISK_PENDING
+    - from: CONTROLLED_EXECUTE
+      to: OBSERVE
+
+  restricted_transitions:
+    - from: OBSERVE
+      to: CONTROLLED_EXECUTE
+      requires_explicit_approval: true
+    - from: PREPARE
+      to: CONTROLLED_EXECUTE
+      requires_explicit_approval: true
+
+  fail_closed: true
