@@ -1,0 +1,11 @@
+version: 1
+phase: 6
+go_no_go_outcomes:
+  allowed_outcomes:
+    - NO_GO
+    - CONDITIONAL_NO_GO
+    - DEFER
+    - GO_TO_NEXT_REVIEW_STEP
+
+default_position:
+  activation_blocked_until_explicit_go_decision: true
